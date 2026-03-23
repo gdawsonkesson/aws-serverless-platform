@@ -260,8 +260,8 @@ git push origin main  # Auto-deploy via GitHub Actions
 ### **Local Development**
 ```bash
 # Clone repository
-git clone https://github.com/QUOJO-DAWSON/devops-practise.git
-cd devops-practise/aws-free-tier
+git clone https://github.com/QUOJO-DAWSON/aws-serverless-platform.git
+cd aws-serverless-platform/aws-free-tier
 
 # Initialize Terraform
 cd terraform
@@ -450,7 +450,7 @@ resource "aws_cloudfront_origin_access_control" "portfolio_oac" {
 
 ## 📁 Project Structure
 ```
-devops-practise/
+aws-serverless-platform/
 ├── .github/
 │   └── workflows/
 │       └── manual-deploy.yml          # GitHub Actions CI/CD
@@ -612,7 +612,7 @@ AWS Certified Solutions Architect - Associate (SAA-C03)
 
 **Built with ❤️ using AWS, Terraform, and DevOps best practices**
 
-[![Deploy Status](https://img.shields.io/badge/Deploy-Passing-success?style=for-the-badge)](https://github.com/QUOJO-DAWSON/devops-practise/actions)
+[![Deploy Status](https://img.shields.io/badge/Deploy-Passing-success?style=for-the-badge)](https://github.com/QUOJO-DAWSON/aws-serverless-platform/actions)
 [![Uptime](https://img.shields.io/badge/Uptime-99.99%25-brightgreen?style=for-the-badge)](https://gdawsonkesson.com)
 [![Cost Optimized](https://img.shields.io/badge/Cost%20Savings-88%25-orange?style=for-the-badge)](docs/adrs/ADR-001-serverless-architecture.md)
 [![Documented](https://img.shields.io/badge/ADRs-4-blue?style=for-the-badge)](docs/adrs/README.md)
