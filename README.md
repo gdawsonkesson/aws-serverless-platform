@@ -1,4 +1,4 @@
-﻿# 🚀 DevOps Portfolio - Serverless Infrastructure
+# ?? DevOps Portfolio - Serverless Infrastructure
 
 [![Live Site](https://img.shields.io/badge/Live-gdawsonkesson.com-blue?style=for-the-badge)](https://gdawsonkesson.com)
 [![AWS](https://img.shields.io/badge/AWS-Certified%20SAA--C03-orange?style=for-the-badge&logo=amazon-aws)](https://aws.amazon.com/certification/)
@@ -8,71 +8,71 @@
 > **Production-grade serverless portfolio with comprehensive Architecture Decision Records**  
 > Built with AWS, Terraform, and GitHub Actions CI/CD | **88% cost savings documented**
 
-[**🌐 View Live Site »**](https://gdawsonkesson.com)
+[**?? View Live Site �**](https://gdawsonkesson.com)
 
 ---
 
-## 📊 Overview
+## ?? Overview
 
 This project showcases a **fully automated, cost-optimized serverless architecture** deployed on AWS, demonstrating real-world DevOps engineering skills with **documented architectural decisions** and **production-grade practices**:
 
-- ✅ **Zero-downtime deployments** via GitHub Actions
-- ✅ **Infrastructure as Code** with 500+ lines of Terraform
-- ✅ **Architecture Decision Records** (4 comprehensive ADRs)
-- ✅ **88% cost savings** (serverless vs EC2, documented in ADR-001)
-- ✅ **Modern security** (CloudFront OAC vs legacy OAI, ADR-002)
-- ✅ **Custom domain with SSL** (gdawsonkesson.com)
-- ✅ **Serverless visitor counter** (Lambda + DynamoDB)
-- ✅ **Runs on AWS Free Tier** ($1.70/month after free tier)
+- ? **Zero-downtime deployments** via GitHub Actions
+- ? **Infrastructure as Code** with 500+ lines of Terraform
+- ? **Architecture Decision Records** (4 comprehensive ADRs)
+- ? **88% cost savings** (serverless vs EC2, documented in ADR-001)
+- ? **Modern security** (CloudFront OAC vs legacy OAI, ADR-002)
+- ? **Custom domain with SSL** (gdawsonkesson.com)
+- ? **Serverless visitor counter** (Lambda + DynamoDB)
+- ? **Runs on AWS Free Tier** ($1.70/month after free tier)
 
 **Live Stats:**
-- 💰 **Cost:** $1.70/month (~$20/year with domain)
-- ⚡ **Response Time:** <200ms globally
-- 🔒 **Security:** HTTPS with ACM certificate + CloudFront OAC
-- 📈 **Uptime:** 99.99% (CloudFront SLA)
-- 📝 **Documentation:** 4 ADRs + cost analysis
+- ?? **Cost:** $1.70/month (~$20/year with domain)
+- ? **Response Time:** <200ms globally
+- ?? **Security:** HTTPS with ACM certificate + CloudFront OAC
+- ?? **Uptime:** 99.99% (CloudFront SLA)
+- ?? **Documentation:** 4 ADRs + cost analysis
 
 ---
 
-## 🏗️ Architecture
+## ??? Architecture
 ```
                         Internet
-                            ↓
+                            ?
                       HTTPS (TLS 1.2+)
-                            ↓
-       ┌────────────────────────────────────────┐
-       │  Route 53 DNS → gdawsonkesson.com      │
-       └────────────────────────────────────────┘
-                            ↓ Alias Record
-       ┌────────────────────────────────────────┐
-       │  CloudFront CDN + ACM SSL Certificate  │
-       │  Global Edge Locations                 │
-       │  PriceClass_100 (NA/EU)                │
-       └────────────────────────────────────────┘
-                            ↓ Origin Access Control (OAC)
-       ┌────────────────────────────────────────┐
-       │  S3 Bucket (Private)                   │
-       │  + Versioning + Encryption (AES-256)   │
-       │  Static Website Content                │
-       └────────────────────────────────────────┘
+                            ?
+       +----------------------------------------+
+       �  Route 53 DNS ? gdawsonkesson.com      �
+       +----------------------------------------+
+                            ? Alias Record
+       +----------------------------------------+
+       �  CloudFront CDN + ACM SSL Certificate  �
+       �  Global Edge Locations                 �
+       �  PriceClass_100 (NA/EU)                �
+       +----------------------------------------+
+                            ? Origin Access Control (OAC)
+       +----------------------------------------+
+       �  S3 Bucket (Private)                   �
+       �  + Versioning + Encryption (AES-256)   �
+       �  Static Website Content                �
+       +----------------------------------------+
 
-       ┌────────────────────────────────────────┐
-       │  API Gateway (HTTP)                    │
-       │  /count endpoint                       │
-       └────────────────────────────────────────┘
-                            ↓ Lambda Proxy Integration
-       ┌─────────────────────┬──────────────────┐
-       │  Lambda Function    │  DynamoDB        │
-       │  (Node.js 18)       │  PAY_PER_REQUEST │
-       │  + CloudWatch Logs  │  (Visitor Count) │
-       └─────────────────────┴──────────────────┘
+       +----------------------------------------+
+       �  API Gateway (HTTP)                    �
+       �  /count endpoint                       �
+       +----------------------------------------+
+                            ? Lambda Proxy Integration
+       +----------------------------------------+
+       �  Lambda Function    �  DynamoDB        �
+       �  (Node.js 18)       �  PAY_PER_REQUEST �
+       �  + CloudWatch Logs  �  (Visitor Count) �
+       +----------------------------------------+
 ```
 
 ---
 
-## 📚 Architecture Decision Records
+## ?? Architecture Decision Records
 
-This project demonstrates **FAANG-level documentation practices** with comprehensive ADRs explaining all major architectural choices:
+This project documents all major architectural decisions using ADRs (Architecture Decision Records):
 
 | ADR | Decision | Outcome | Savings |
 |-----|----------|---------|---------|
@@ -85,46 +85,46 @@ This project demonstrates **FAANG-level documentation practices** with comprehen
 
 ### Why ADRs Matter
 
-Architecture Decision Records are a **FAANG-level best practice** that:
-- 📝 Document **why** decisions were made, not just **what**
-- 💰 Provide **measurable cost analysis** with real numbers
-- 🔄 Enable **informed reversals** when requirements change
-- 🎯 Demonstrate **strategic thinking** to hiring managers
-- 📊 Show **data-driven decision making**
+Architecture Decision Records are an industry best practice that:
+- ?? Document **why** decisions were made, not just **what**
+- ?? Provide **measurable cost analysis** with real numbers
+- ?? Enable **informed reversals** when requirements change
+- ?? Demonstrate **strategic thinking** to hiring managers
+- ?? Show **data-driven decision making**
 
-[**📖 View All ADRs »**](docs/adrs/README.md)
+[**?? View All ADRs �**](docs/adrs/README.md)
 
 ---
 
-## 🎯 Features
+## ?? Features
 
 ### **Production-Grade Portfolio Website**
-- ✅ Responsive design (mobile-first approach)
-- ✅ WCAG 2.1 accessibility compliant
-- ✅ Real-time visitor counter (serverless API)
-- ✅ Custom domain with free SSL certificate
-- ✅ Font Awesome 6.4 professional icons
-- ✅ Modern UI with gradients and animations
+- ? Responsive design (mobile-first approach)
+- ? WCAG 2.1 accessibility compliant
+- ? Real-time visitor counter (serverless API)
+- ? Custom domain with free SSL certificate
+- ? Font Awesome 6.4 professional icons
+- ? Modern UI with gradients and animations
 
 ### **Serverless Backend**
-- ✅ AWS Lambda for visitor counter logic
-- ✅ API Gateway HTTP API (REST endpoint)
-- ✅ DynamoDB on-demand billing (**cost-optimized**, see ADR-003)
-- ✅ CloudWatch monitoring with alarms
+- ? AWS Lambda for visitor counter logic
+- ? API Gateway HTTP API (REST endpoint)
+- ? DynamoDB on-demand billing (**cost-optimized**, see ADR-003)
+- ? CloudWatch monitoring with alarms
 
 ### **DevOps Best Practices**
-- ✅ **Infrastructure as Code:** 500+ lines of Terraform HCL
-- ✅ **CI/CD:** GitHub Actions auto-deploy on push
-- ✅ **Zero-Downtime Deployments:** CloudFront cache invalidation
-- ✅ **Rollback Capability:** S3 versioning + Terraform state
-- ✅ **Cost Optimization:** 88% savings documented (ADR-001)
-- ✅ **Monitoring:** CloudWatch alarms for errors/throttles
-- ✅ **Security:** Private S3, OAC (ADR-002), encryption at rest
-- ✅ **Documentation:** 4 comprehensive ADRs + cost analysis
+- ? **Infrastructure as Code:** 500+ lines of Terraform HCL
+- ? **CI/CD:** GitHub Actions auto-deploy on push
+- ? **Zero-Downtime Deployments:** CloudFront cache invalidation
+- ? **Rollback Capability:** S3 versioning + Terraform state
+- ? **Cost Optimization:** 88% savings documented (ADR-001)
+- ? **Monitoring:** CloudWatch alarms for errors/throttles
+- ? **Security:** Private S3, OAC (ADR-002), encryption at rest
+- ? **Documentation:** 4 comprehensive ADRs + cost analysis
 
 ---
 
-## 🛠️ Tech Stack
+## ??? Tech Stack
 
 ### **Frontend**
 - HTML5 + CSS3 (Modern gradients, animations)
@@ -151,7 +151,7 @@ Architecture Decision Records are a **FAANG-level best practice** that:
 
 ---
 
-## 📈 Deployment Strategy
+## ?? Deployment Strategy
 
 ### **Zero-Downtime Deployments**
 
@@ -201,7 +201,7 @@ git push origin main  # Auto-deploy via GitHub Actions
 
 ---
 
-## 💰 Cost Breakdown
+## ?? Cost Breakdown
 
 ### **Documented Cost Analysis** *(from ADR-001 and ADR-003)*
 
@@ -237,17 +237,17 @@ git push origin main  # Auto-deploy via GitHub Actions
 - **Annual Savings:** **$177.60/year**
 
 **Optimization Strategies:** *(from ADR-003)*
-- ✅ **On-Demand DynamoDB** (saves $2.35/month vs provisioned)
-- ✅ **CloudFront PriceClass_100** (North America/Europe only)
-- ✅ **S3 Lifecycle Policies** (expire old versions after 30 days)
-- ✅ **Lambda Memory Optimization** (128MB sufficient)
-- ✅ **CloudWatch Log Retention** (7 days, not indefinite)
+- ? **On-Demand DynamoDB** (saves $2.35/month vs provisioned)
+- ? **CloudFront PriceClass_100** (North America/Europe only)
+- ? **S3 Lifecycle Policies** (expire old versions after 30 days)
+- ? **Lambda Memory Optimization** (128MB sufficient)
+- ? **CloudWatch Log Retention** (7 days, not indefinite)
 
-[**📊 View Full Cost Analysis »**](docs/cost-analysis.md)
+[**?? View Full Cost Analysis �**](docs/cost-analysis.md)
 
 ---
 
-## 🚀 Setup & Deployment
+## ?? Setup & Deployment
 
 ### **Prerequisites**
 
@@ -297,32 +297,32 @@ Workflow:
 
 **Setup:**
 ```bash
-# GitHub Settings → Secrets → Actions → New repository secret
+# GitHub Settings ? Secrets ? Actions ? New repository secret
 AWS_ACCESS_KEY_ID: <your-access-key>
 AWS_SECRET_ACCESS_KEY: <your-secret-key>
 ```
 
 ---
 
-## 🔒 Security
+## ?? Security
 
 ### **Implementation** *(from ADR-002)*
 
-- ✅ **S3 Bucket:** Private (no public access)
-- ✅ **CloudFront OAC:** Exclusive S3 access (modern, not legacy OAI)
-- ✅ **Encryption:** AES-256 at rest
-- ✅ **HTTPS:** TLS 1.2+ enforced
-- ✅ **SSL Certificate:** AWS Certificate Manager (auto-renewal)
-- ✅ **IAM:** Least privilege policies
-- ✅ **Secrets:** GitHub Actions secrets (not in code)
+- ? **S3 Bucket:** Private (no public access)
+- ? **CloudFront OAC:** Exclusive S3 access (modern, not legacy OAI)
+- ? **Encryption:** AES-256 at rest
+- ? **HTTPS:** TLS 1.2+ enforced
+- ? **SSL Certificate:** AWS Certificate Manager (auto-renewal)
+- ? **IAM:** Least privilege policies
+- ? **Secrets:** GitHub Actions secrets (not in code)
 
 ### **Why CloudFront OAC?** *(from ADR-002)*
 
 **Origin Access Control (OAC)** is the modern successor to Origin Access Identity (OAI):
-- ✅ Supports all S3 buckets (including encrypted)
-- ✅ Better security with SigV4 signing
-- ✅ AWS-recommended best practice
-- ✅ Future-proof (OAI being deprecated)
+- ? Supports all S3 buckets (including encrypted)
+- ? Better security with SigV4 signing
+- ? AWS-recommended best practice
+- ? Future-proof (OAI being deprecated)
 
 ### **Security Best Practices**
 ```hcl
@@ -343,7 +343,7 @@ resource "aws_cloudfront_origin_access_control" "portfolio_oac" {
 
 ---
 
-## 📊 Monitoring & Alerts
+## ?? Monitoring & Alerts
 
 ### **CloudWatch Alarms**
 ```hcl
@@ -376,34 +376,34 @@ resource "aws_cloudfront_origin_access_control" "portfolio_oac" {
 
 ---
 
-## 💡 Key Learnings & Decisions
+## ?? Key Learnings & Decisions
 
 ### **Why Serverless?** *(from ADR-001)*
 
 **Serverless vs EC2 Analysis:**
-- **Cost:** 88% reduction ($16.50 → $1.70/month)
+- **Cost:** 88% reduction ($16.50 ? $1.70/month)
 - **Scalability:** Auto-scales with traffic (0 to millions)
 - **Maintenance:** Zero server management
 - **Availability:** 99.99% SLA (CloudFront)
 - **Security:** Reduced attack surface (no SSH, no OS patching)
 
 **Trade-offs Considered:**
-- ❌ Cold start latency (~200ms first request)
-- ❌ Vendor lock-in (AWS-specific)
-- ✅ Acceptable for static portfolio use case
-- ✅ Cost savings justify trade-offs
+- ? Cold start latency (~200ms first request)
+- ? Vendor lock-in (AWS-specific)
+- ? Acceptable for static portfolio use case
+- ? Cost savings justify trade-offs
 
-[**📖 Read Full Analysis: ADR-001 »**](docs/adrs/ADR-001-serverless-architecture.md)
+[**?? Read Full Analysis: ADR-001 �**](docs/adrs/ADR-001-serverless-architecture.md)
 
 ### **Why CloudFront OAC over OAI?** *(from ADR-002)*
 
 **Modern Security Best Practice:**
-- ✅ Supports encrypted S3 buckets
-- ✅ SigV4 signing (more secure)
-- ✅ AWS-recommended (OAI being deprecated)
-- ✅ Future-proof architecture
+- ? Supports encrypted S3 buckets
+- ? SigV4 signing (more secure)
+- ? AWS-recommended (OAI being deprecated)
+- ? Future-proof architecture
 
-[**📖 Read Full Analysis: ADR-002 »**](docs/adrs/ADR-002-cloudfront-oac.md)
+[**?? Read Full Analysis: ADR-002 �**](docs/adrs/ADR-002-cloudfront-oac.md)
 
 ### **Why DynamoDB On-Demand?** *(from ADR-003)*
 
@@ -417,76 +417,76 @@ resource "aws_cloudfront_origin_access_control" "portfolio_oac" {
 - Low-volume applications
 - Cost-sensitive projects
 
-[**📖 Read Full Analysis: ADR-003 »**](docs/adrs/ADR-003-dynamodb-ondemand.md)
+[**?? Read Full Analysis: ADR-003 �**](docs/adrs/ADR-003-dynamodb-ondemand.md)
 
 ### **Why GitHub Actions over Jenkins?** *(from ADR-004)*
 
 **For This Project:**
-- ✅ No infrastructure to maintain
-- ✅ Free for public repositories
-- ✅ Integrated with GitHub
-- ✅ Simple YAML configuration
-- ✅ Secrets management built-in
+- ? No infrastructure to maintain
+- ? Free for public repositories
+- ? Integrated with GitHub
+- ? Simple YAML configuration
+- ? Secrets management built-in
 
 **Jenkins is Better For:**
 - Complex enterprise pipelines
 - Self-hosted requirements
 - Advanced plugin ecosystems
 
-[**📖 Read Full Analysis: ADR-004 »**](docs/adrs/ADR-004-github-actions.md)
+[**?? Read Full Analysis: ADR-004 �**](docs/adrs/ADR-004-github-actions.md)
 
 ### **Why Custom Domain?**
 
 **Professional Benefits:**
-- ✅ Brand credibility (gdawsonkesson.com vs cloudfront.net)
-- ✅ SEO optimization
-- ✅ Custom email (info@gdawsonkesson.com)
-- ✅ Professional appearance on resume/LinkedIn
-- ✅ Demonstrates DNS/SSL knowledge
+- ? Brand credibility (gdawsonkesson.com vs cloudfront.net)
+- ? SEO optimization
+- ? Custom email (info@gdawsonkesson.com)
+- ? Professional appearance on resume/LinkedIn
+- ? Demonstrates DNS/SSL knowledge
 
 **Cost:** ~$16/year (minimal for professional impact)
 
 ---
 
-## 📁 Project Structure
+## ?? Project Structure
 ```
 aws-serverless-platform/
-├── .github/
-│   └── workflows/
-│       └── manual-deploy.yml          # GitHub Actions CI/CD
-├── aws-free-tier/
-│   ├── terraform/
-│   │   ├── main.tf                    # CloudFront, S3, Lambda, API, DynamoDB
-│   │   ├── security.tf                # S3 encryption, versioning, lifecycle
-│   │   ├── cost-monitoring.tf         # SNS, budgets, alarms
-│   │   ├── route53.tf                 # DNS hosted zone, nameservers
-│   │   ├── acm.tf                     # SSL certificate (us-east-1)
-│   │   ├── dns-records.tf             # A records for custom domain
-│   │   ├── variables.tf               # Input variables
-│   │   ├── outputs.tf                 # Terraform outputs
-│   │   └── provider.tf                # AWS provider config
-│   ├── lambda/
-│   │   └── index.js                   # Visitor counter logic
-│   └── website/
-│       └── index.html                 # Production-ready portfolio UI
-├── docs/
-│   ├── adrs/
-│   │   ├── README.md                  # ADR index
-│   │   ├── ADR-001-serverless-architecture.md
-│   │   ├── ADR-002-cloudfront-oac.md
-│   │   ├── ADR-003-dynamodb-ondemand.md
-│   │   └── ADR-004-github-actions.md
-│   ├── cost-analysis.md               # Detailed cost breakdown
-│   ├── diagrams/                      # Architecture diagrams (ready)
-│   └── runbooks/                      # Operational runbooks (ready)
-├── testing/
-│   └── results/                       # Test results (ready)
-└── README.md                          # This file
++-- .github/
+�   +-- workflows/
+�       +-- manual-deploy.yml          # GitHub Actions CI/CD
++-- aws-free-tier/
+�   +-- terraform/
+�   �   +-- main.tf                    # CloudFront, S3, Lambda, API, DynamoDB
+�   �   +-- security.tf                # S3 encryption, versioning, lifecycle
+�   �   +-- cost-monitoring.tf         # SNS, budgets, alarms
+�   �   +-- route53.tf                 # DNS hosted zone, nameservers
+�   �   +-- acm.tf                     # SSL certificate (us-east-1)
+�   �   +-- dns-records.tf             # A records for custom domain
+�   �   +-- variables.tf               # Input variables
+�   �   +-- outputs.tf                 # Terraform outputs
+�   �   +-- provider.tf                # AWS provider config
+�   +-- lambda/
+�   �   +-- index.js                   # Visitor counter logic
+�   +-- website/
+�       +-- index.html                 # Production-ready portfolio UI
++-- docs/
+�   +-- adrs/
+�   �   +-- README.md                  # ADR index
+�   �   +-- ADR-001-serverless-architecture.md
+�   �   +-- ADR-002-cloudfront-oac.md
+�   �   +-- ADR-003-dynamodb-ondemand.md
+�   �   +-- ADR-004-github-actions.md
+�   +-- cost-analysis.md               # Detailed cost breakdown
+�   +-- diagrams/                      # Architecture diagrams (ready)
+�   +-- runbooks/                      # Operational runbooks (ready)
++-- testing/
+�   +-- results/                       # Test results (ready)
++-- README.md                          # This file
 ```
 
 ---
 
-## 🧪 Testing
+## ?? Testing
 
 ### **Infrastructure Validation**
 ```bash
@@ -529,7 +529,7 @@ curl -w "@curl-format.txt" -o /dev/null -s https://gdawsonkesson.com
 
 ---
 
-## 🔗 Related Projects
+## ?? Related Projects
 
 This serverless portfolio is part of a **3-repository DevOps ecosystem** demonstrating both serverless and Kubernetes expertise:
 
@@ -549,15 +549,15 @@ This serverless portfolio is part of a **3-repository DevOps ecosystem** demonst
 - Multi-AZ High Availability
 
 **This demonstrates:**
-- ✅ Serverless expertise (this repo)
-- ✅ Kubernetes expertise (3-repo ecosystem)
-- ✅ GitOps practices (ArgoCD)
-- ✅ Security hardening (Kyverno + Trivy)
-- ✅ Production observability (Prometheus stack)
+- ? Serverless expertise (this repo)
+- ? Kubernetes expertise (3-repo ecosystem)
+- ? GitOps practices (ArgoCD)
+- ? Security hardening (Kyverno + Trivy)
+- ? Production observability (Prometheus stack)
 
 ---
 
-## 🤝 Contributing
+## ?? Contributing
 
 This is a personal portfolio project, but feedback and suggestions are welcome!
 
@@ -569,25 +569,25 @@ This is a personal portfolio project, but feedback and suggestions are welcome!
 
 ---
 
-## 📄 License
+## ?? License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👤 Author
+## ?? Author
 
 **George Dawson-Kesson**  
 AWS Certified Solutions Architect - Associate (SAA-C03)
 
-- 🌐 Portfolio: [gdawsonkesson.com](https://gdawsonkesson.com)
-- 💼 LinkedIn: [linkedin.com/in/gdawsonkesson](https://www.linkedin.com/in/gdawsonkesson)
-- 💻 GitHub: [github.com/gdawsonkesson](https://github.com/gdawsonkesson)
-- 📧 Email: [info@gdawsonkesson.com](mailto:info@gdawsonkesson.com)
+- ?? Portfolio: [gdawsonkesson.com](https://gdawsonkesson.com)
+- ?? LinkedIn: [linkedin.com/in/gdawsonkesson](https://www.linkedin.com/in/gdawsonkesson)
+- ?? GitHub: [github.com/gdawsonkesson](https://github.com/gdawsonkesson)
+- ?? Email: [info@gdawsonkesson.com](mailto:info@gdawsonkesson.com)
 
 ---
 
-## 🙏 Acknowledgments
+## ?? Acknowledgments
 
 - AWS Well-Architected Framework for architectural guidance
 - Terraform Registry for module documentation
@@ -596,9 +596,9 @@ AWS Certified Solutions Architect - Associate (SAA-C03)
 
 ---
 
-## 📊 Project Status
+## ?? Project Status
 
-✅ **Production** - Live and actively maintained
+? **Production** - Live and actively maintained
 
 **Last Updated:** March 2026  
 **Infrastructure Version:** 1.0.0  
@@ -610,7 +610,7 @@ AWS Certified Solutions Architect - Associate (SAA-C03)
 
 <div align="center">
 
-**Built with ❤️ using AWS, Terraform, and DevOps best practices**
+**Built with ?? using AWS, Terraform, and DevOps best practices**
 
 [![Deploy Status](https://img.shields.io/badge/Deploy-Passing-success?style=for-the-badge)](https://github.com/gdawsonkesson/aws-serverless-platform/actions)
 [![Uptime](https://img.shields.io/badge/Uptime-99.99%25-brightgreen?style=for-the-badge)](https://gdawsonkesson.com)
